@@ -9,8 +9,7 @@ class Graph {
     }
 
     containsPoint(point) {
-        return this.points.find((p) => p.equals(pogit add README.md
-            int));
+        return this.points.find((p) => p.equals(point));
     }
 
     tryAddPoint(point) {
@@ -19,6 +18,10 @@ class Graph {
             return true;
         }
         return false;
+    }
+
+    addSegment(seg) {
+        this.segments.push(seg);
     }
 
     draw(ctx) {
